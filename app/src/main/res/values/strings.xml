@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Te4ch</string>
+    <string name="app_name">App2</string>
+    <string name="roll">Roll Again !</string>
+    <string name="take_pic">Take Picture !</string>
 </resources>

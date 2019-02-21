@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.te4ch"
+        applicationId "com.example.app2"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -15,7 +15,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags ""
+                cppFlags "-std=c++14"
             }
         }
     }
