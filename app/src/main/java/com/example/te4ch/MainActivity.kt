@@ -1,4 +1,4 @@
-package com.example.st4ck.mynewapp
+package com.example.te4ch
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -11,20 +11,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Example of a call to a native method
-        sample_text.text = stringFromJNI()
+       // sample_text.text = stringFromJNI()
+       //sample_text.text = stringFromJNI("Hello 42")
+         val n = 9u;
+       // sample_text.text = is_powerOfThree(n).toString()
     }
 
     /**
      * A native method that is implemented by the 'native-lib' native library,
      * which is packaged with this application.
      */
-    external fun stringFromJNI(): String
+    //  external fun stringFromJNI(): String
+ //  external fun stringFromJNI(m: String): String
+    external fun is_powerOfThree(e: UInt): Boolean// m: kotlin.UInt
 
     companion object {
 
         // Used to load the 'native-lib' library on application startup.
         init {
-            System.loadLibrary("native-lib")
+          //  System.loadLibrary("native-lib")
+            System.loadLibrary("root_three")
         }
     }
 }

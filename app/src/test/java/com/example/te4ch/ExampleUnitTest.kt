@@ -1,4 +1,4 @@
-package com.example.st4ck.mynewapp
+package com.example.te4ch
 
 import org.junit.Test
 
